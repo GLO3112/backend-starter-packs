@@ -1,6 +1,6 @@
 # GLO-3112 - Développement avancé d'applications web
 
-* [React Starter](https://github.com/GLO3112/backend-starter-packs/blob/master/java-starter/README.md)
+* [Java/Spring Boot Starter](https://github.com/GLO3112/backend-starter-packs/blob/master/java-starter/README.md)
 
 ## Starter packs de développement backend
 
