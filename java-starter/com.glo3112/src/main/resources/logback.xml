@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <timestamp key="date" datePattern="yyyyMMdd" />
+
+    <appender name="AWS_LOGS" class="ca.pjer.logback.AwsLogsAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <layout>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n</pattern>
+        </layout>
+        <logGroupName>/com/glo3102</logGroupName>
+        <logStreamName>service-${date}</logStreamName>
+    </appender>
+
+    <appender name="ASYNC_AWS_LOGS" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="AWS_LOGS" />
+    </appender>
+
+    <!-- By default, the level of the root level is set to INFO -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="ASYNC_AWS_LOGS" />
+    </root>
+</configuration>
