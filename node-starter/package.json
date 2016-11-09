@@ -1,0 +1,30 @@
+{
+  "name": "node-starter",
+  "version": "1.0.0",
+  "description": "Packs de départs pour développement avancé d'application web",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GLO3112/backend-starter-packs.git"
+  },
+  "author": "William Fortin & Vincent Séguin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GLO3112/backend-starter-packs/issues"
+  },
+  "homepage": "https://github.com/GLO3112/backend-starter-packs#readme",
+  "dependencies": {
+    "aws-sdk": "^2.6.15",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "redis": "^2.6.3",
+    "winston": "^2.3.0",
+    "winston-cloudwatch": "^1.7.0"
+  }
+}
