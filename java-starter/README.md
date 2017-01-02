@@ -33,3 +33,9 @@ coverage de vos tests.
 ```sh
 mvn clean test
 ```
+
+# Déployer
+
+```sh
+mvn package
+```
