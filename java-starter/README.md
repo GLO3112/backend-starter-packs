@@ -33,3 +33,11 @@ coverage de vos tests.
 ```sh
 mvn clean test
 ```
+
+# Déployer
+
+Une fois avoir compilé, afin de créer un _fat jar_ pour le déploiement.
+
+```sh
+mvn package
+```
