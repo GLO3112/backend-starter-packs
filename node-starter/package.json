@@ -4,8 +4,8 @@
   "description": "Packs de départs pour développement avancé d'application web",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "istanbul cover _mocha -- -u exports -R spec test/**/*",
+    "start": "node src/index.js",
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- -u exports -R spec test/**/*.js",
     "coverage": "opn ./coverage/lcov-report/index.html"
   },
   "repository": {
@@ -30,9 +30,9 @@
     "winston-cloudwatch": "^1.7.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.1.2",
     "istanbul": "^0.4.5",
-    "mocha": "^3.1.2",
+    "mocha": "^4.1.0",
     "opn-cli": "^3.1.0"
   }
 }
